@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U?
+L MCU_Microchip_ATmega:ATmega32U4-AU U2
 U 1 1 5E07A591
 P 6500 4200
-F 0 "U?" H 6500 2311 50  0000 C CNN
+F 0 "U2" H 6500 2311 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 6500 2220 50  0000 C CNN
 F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 6500 4200 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 6500 4200 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR014
 U 1 1 5E14CEE1
 P 6400 2290
-F 0 "#PWR?" H 6400 2140 50  0001 C CNN
+F 0 "#PWR014" H 6400 2140 50  0001 C CNN
 F 1 "+5V" H 6415 2463 50  0000 C CNN
 F 2 "" H 6400 2290 50  0001 C CNN
 F 3 "" H 6400 2290 50  0001 C CNN
@@ -46,10 +46,10 @@ Connection ~ 6400 2400
 Wire Wire Line
 	6500 6000 6400 6000
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR013
 U 1 1 5E150234
 P 6000 6300
-F 0 "#PWR?" H 6000 6350 20  0001 C CNN
+F 0 "#PWR013" H 6000 6350 20  0001 C CNN
 F 1 "GND" H 6000 6359 30  0000 C CNN
 F 2 "" H 6000 6300 60  0000 C CNN
 F 3 "" H 6000 6300 60  0000 C CNN
@@ -62,10 +62,10 @@ Wire Wire Line
 	6000 6000 6400 6000
 Connection ~ 6400 6000
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR015
 U 1 1 5E150A49
 P 8000 4800
-F 0 "#PWR?" H 8000 4850 20  0001 C CNN
+F 0 "#PWR015" H 8000 4850 20  0001 C CNN
 F 1 "GND" H 8000 4859 30  0000 C CNN
 F 2 "" H 8000 4800 60  0000 C CNN
 F 3 "" H 8000 4800 60  0000 C CNN
@@ -73,12 +73,12 @@ F 3 "" H 8000 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R6
 U 1 1 5E15134E
 P 7500 4800
-F 0 "R?" V 7304 4800 50  0000 C CNN
+F 0 "R6" V 7304 4800 50  0000 C CNN
 F 1 "10k" V 7395 4800 50  0000 C CNN
-F 2 "" H 7500 4800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 4800 50  0001 C CNN
 F 3 "~" H 7500 4800 50  0001 C CNN
 	1    7500 4800
 	0    1    1    0   
@@ -88,21 +88,21 @@ Wire Wire Line
 Wire Wire Line
 	7600 4800 8000 4800
 $Comp
-L Device:C_Small C?
+L Device:C_Small C1
 U 1 1 5E152239
 P 900 1100
-F 0 "C?" H 750 1150 50  0000 L CNN
+F 0 "C1" H 750 1150 50  0000 L CNN
 F 1 "0.1u" H 650 1000 50  0000 L CNN
-F 2 "" H 900 1100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 900 1100 50  0001 C CNN
 F 3 "~" H 900 1100 50  0001 C CNN
 	1    900  1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR01
 U 1 1 5E1547CF
 P 1400 850
-F 0 "#PWR?" H 1400 700 50  0001 C CNN
+F 0 "#PWR01" H 1400 700 50  0001 C CNN
 F 1 "+5V" H 1415 1023 50  0000 C CNN
 F 2 "" H 1400 850 50  0001 C CNN
 F 3 "" H 1400 850 50  0001 C CNN
@@ -110,10 +110,10 @@ F 3 "" H 1400 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR02
 U 1 1 5E154981
 P 1400 1450
-F 0 "#PWR?" H 1400 1500 20  0001 C CNN
+F 0 "#PWR02" H 1400 1500 20  0001 C CNN
 F 1 "GND" H 1400 1350 30  0000 C CNN
 F 2 "" H 1400 1450 60  0000 C CNN
 F 3 "" H 1400 1450 60  0000 C CNN
@@ -121,34 +121,34 @@ F 3 "" H 1400 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 5E159C61
 P 1200 1100
-F 0 "C?" H 1050 1150 50  0000 L CNN
+F 0 "C2" H 1050 1150 50  0000 L CNN
 F 1 "0.1u" H 950 1000 50  0000 L CNN
-F 2 "" H 1200 1100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1200 1100 50  0001 C CNN
 F 3 "~" H 1200 1100 50  0001 C CNN
 	1    1200 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C3
 U 1 1 5E15AE93
 P 1600 1100
-F 0 "C?" H 1650 1150 50  0000 L CNN
+F 0 "C3" H 1650 1150 50  0000 L CNN
 F 1 "0.1u" H 1600 1000 50  0000 L CNN
-F 2 "" H 1600 1100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1600 1100 50  0001 C CNN
 F 3 "~" H 1600 1100 50  0001 C CNN
 	1    1600 1100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C4
 U 1 1 5E15B38A
 P 1900 1100
-F 0 "C?" H 1950 1150 50  0000 L CNN
+F 0 "C4" H 1950 1150 50  0000 L CNN
 F 1 "10u" H 1900 1000 50  0000 L CNN
-F 2 "" H 1900 1100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 1900 1100 50  0001 C CNN
 F 3 "~" H 1900 1100 50  0001 C CNN
 	1    1900 1100
 	1    0    0    -1  
@@ -188,23 +188,23 @@ Wire Wire Line
 	1900 1250 1900 1200
 Connection ~ 1600 1250
 $Comp
-L keyboard_parts:SW_PUSH SW?
+L keyboard_parts:SW_PUSH SW1
 U 1 1 5E15F1EB
 P 4950 2700
-F 0 "SW?" H 4950 2955 50  0000 C CNN
+F 0 "SW1" H 4950 2955 50  0000 C CNN
 F 1 "SW_PUSH" H 4950 2864 50  0000 C CNN
-F 2 "" H 4950 2700 60  0000 C CNN
+F 2 "random-keyboard-parts:SKQG-1155865" H 4950 2700 60  0001 C CNN
 F 3 "" H 4950 2700 60  0000 C CNN
 	1    4950 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R3
 U 1 1 5E161E9D
 P 5350 2500
-F 0 "R?" V 5154 2500 50  0000 C CNN
+F 0 "R3" V 5154 2500 50  0000 C CNN
 F 1 "10k" V 5245 2500 50  0000 C CNN
-F 2 "" H 5350 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 2500 50  0001 C CNN
 F 3 "~" H 5350 2500 50  0001 C CNN
 	1    5350 2500
 	0    1    1    0   
@@ -223,10 +223,10 @@ Wire Wire Line
 Wire Wire Line
 	5200 2500 5200 2250
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR010
 U 1 1 5E163E07
 P 5200 2250
-F 0 "#PWR?" H 5200 2100 50  0001 C CNN
+F 0 "#PWR010" H 5200 2100 50  0001 C CNN
 F 1 "+5V" H 5215 2423 50  0000 C CNN
 F 2 "" H 5200 2250 50  0001 C CNN
 F 3 "" H 5200 2250 50  0001 C CNN
@@ -234,10 +234,10 @@ F 3 "" H 5200 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR09
 U 1 1 5E16447C
 P 4650 2700
-F 0 "#PWR?" H 4650 2750 20  0001 C CNN
+F 0 "#PWR09" H 4650 2750 20  0001 C CNN
 F 1 "GND" V 4650 2500 30  0000 L CNN
 F 2 "" H 4650 2700 60  0000 C CNN
 F 3 "" H 4650 2700 60  0000 C CNN
@@ -253,12 +253,12 @@ XTAL1
 Text GLabel 3900 3400 1    50   Input ~ 0
 XTAL2
 $Comp
-L keyboard_parts:XTAL_GND X?
+L keyboard_parts:XTAL_GND X1
 U 1 1 5E165594
 P 3600 3800
-F 0 "X?" H 3600 4092 60  0000 C CNN
+F 0 "X1" H 3600 4092 60  0000 C CNN
 F 1 "XTAL_GND" H 3600 3986 60  0000 C CNN
-F 2 "" H 3600 3800 60  0000 C CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 3600 3800 60  0001 C CNN
 F 3 "" H 3600 3800 60  0000 C CNN
 	1    3600 3800
 	1    0    0    -1  
@@ -275,12 +275,12 @@ Wire Wire Line
 	3600 4250 3900 4250
 Connection ~ 3600 4250
 $Comp
-L Device:C_Small C?
+L Device:C_Small C5
 U 1 1 5E16774E
 P 3300 4050
-F 0 "C?" H 3100 4100 50  0000 L CNN
+F 0 "C5" H 3100 4100 50  0000 L CNN
 F 1 "22p" H 3100 4000 50  0000 L CNN
-F 2 "" H 3300 4050 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3300 4050 50  0001 C CNN
 F 3 "~" H 3300 4050 50  0001 C CNN
 	1    3300 4050
 	1    0    0    -1  
@@ -291,12 +291,12 @@ Connection ~ 3300 3800
 Wire Wire Line
 	3300 4150 3300 4250
 $Comp
-L Device:C_Small C?
+L Device:C_Small C6
 U 1 1 5E1686FC
 P 3900 4050
-F 0 "C?" H 3992 4096 50  0000 L CNN
+F 0 "C6" H 3992 4096 50  0000 L CNN
 F 1 "22p" H 3992 4005 50  0000 L CNN
-F 2 "" H 3900 4050 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3900 4050 50  0001 C CNN
 F 3 "~" H 3900 4050 50  0001 C CNN
 	1    3900 4050
 	1    0    0    -1  
@@ -311,23 +311,23 @@ Wire Wire Line
 Wire Wire Line
 	5550 3700 5900 3700
 $Comp
-L Device:R_Small R?
+L Device:R_Small R4
 U 1 1 5E16BFEA
 P 5450 3700
-F 0 "R?" V 5450 3700 50  0000 C CNN
+F 0 "R4" V 5450 3700 50  0000 C CNN
 F 1 "22k" V 5345 3700 50  0000 C CNN
-F 2 "" H 5450 3700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 3700 50  0001 C CNN
 F 3 "~" H 5450 3700 50  0001 C CNN
 	1    5450 3700
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R5
 U 1 1 5E16C54B
 P 5450 3800
-F 0 "R?" V 5450 3800 50  0000 C CNN
+F 0 "R5" V 5450 3800 50  0000 C CNN
 F 1 "22k" V 5550 3800 50  0000 C CNN
-F 2 "" H 5450 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5450 3800 50  0001 C CNN
 F 3 "~" H 5450 3800 50  0001 C CNN
 	1    5450 3800
 	0    1    1    0   
@@ -341,10 +341,10 @@ Wire Wire Line
 Wire Wire Line
 	5350 3800 5150 3800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR012
 U 1 1 5E16EF16
 P 5600 3500
-F 0 "#PWR?" H 5600 3350 50  0001 C CNN
+F 0 "#PWR012" H 5600 3350 50  0001 C CNN
 F 1 "+5V" H 5615 3673 50  0000 C CNN
 F 2 "" H 5600 3500 50  0001 C CNN
 F 3 "" H 5600 3500 50  0001 C CNN
@@ -357,21 +357,21 @@ NoConn ~ 5900 3300
 Wire Wire Line
 	5900 4000 5400 4000
 $Comp
-L Device:C_Small C?
+L Device:C_Small C7
 U 1 1 5E171BDA
 P 5400 4300
-F 0 "C?" H 5492 4346 50  0000 L CNN
+F 0 "C7" H 5492 4346 50  0000 L CNN
 F 1 "1u" H 5492 4255 50  0000 L CNN
-F 2 "" H 5400 4300 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 5400 4300 50  0001 C CNN
 F 3 "~" H 5400 4300 50  0001 C CNN
 	1    5400 4300
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR011
 U 1 1 5E17234E
 P 5400 4400
-F 0 "#PWR?" H 5400 4450 20  0001 C CNN
+F 0 "#PWR011" H 5400 4450 20  0001 C CNN
 F 1 "GND" H 5400 4300 30  0000 C CNN
 F 2 "" H 5400 4400 60  0000 C CNN
 F 3 "" H 5400 4400 60  0000 C CNN
@@ -379,12 +379,12 @@ F 3 "" H 5400 4400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Type-C:HRO-TYPE-C-31-M-12 USB?
+L Type-C:HRO-TYPE-C-31-M-12 USB1
 U 1 1 5E173F5E
 P 1650 5900
-F 0 "USB?" H 1450 6550 60  0000 C CNN
+F 0 "USB1" H 1450 6550 60  0000 C CNN
 F 1 "HRO-TYPE-C-31-M-12" V 1250 5850 60  0000 C CNN
-F 2 "" H 1650 5900 60  0001 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-HandSoldering" H 1650 5900 60  0001 C CNN
 F 3 "" H 1650 5900 60  0001 C CNN
 	1    1650 5900
 	1    0    0    -1  
@@ -398,21 +398,21 @@ Wire Wire Line
 Wire Wire Line
 	5400 4000 5400 4200
 $Comp
-L Device:Polyfuse_Small F?
+L Device:Polyfuse_Small F1
 U 1 1 5E17683E
 P 2600 5450
-F 0 "F?" V 2500 5450 50  0000 C CNN
+F 0 "F1" V 2500 5450 50  0000 C CNN
 F 1 "500" V 2550 5600 50  0000 C CNN
-F 2 "" H 2650 5250 50  0001 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2650 5250 50  0001 L CNN
 F 3 "~" H 2600 5450 50  0001 C CNN
 	1    2600 5450
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR05
 U 1 1 5E177DF2
 P 2850 5450
-F 0 "#PWR?" H 2850 5300 50  0001 C CNN
+F 0 "#PWR05" H 2850 5300 50  0001 C CNN
 F 1 "+5V" V 2865 5578 50  0000 L CNN
 F 2 "" H 2850 5450 50  0001 C CNN
 F 3 "" H 2850 5450 50  0001 C CNN
@@ -431,10 +431,10 @@ Wire Wire Line
 	1850 6450 2300 6450
 Connection ~ 1850 6450
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR04
 U 1 1 5E17B86D
 P 2500 6650
-F 0 "#PWR?" H 2500 6700 20  0001 C CNN
+F 0 "#PWR04" H 2500 6700 20  0001 C CNN
 F 1 "GND" H 2500 6550 30  0000 C CNN
 F 2 "" H 2500 6650 60  0000 C CNN
 F 3 "" H 2500 6650 60  0000 C CNN
@@ -452,12 +452,12 @@ Wire Wire Line
 Wire Wire Line
 	2500 5650 2500 6150
 $Comp
-L Device:R_Small R?
+L Device:R_Small R2
 U 1 1 5E17FCB6
 P 2500 6250
-F 0 "R?" H 2550 6300 50  0000 L CNN
+F 0 "R2" H 2550 6300 50  0000 L CNN
 F 1 "5.1k" H 2559 6205 50  0000 L CNN
-F 2 "" H 2500 6250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 6250 50  0001 C CNN
 F 3 "~" H 2500 6250 50  0001 C CNN
 	1    2500 6250
 	1    0    0    -1  
@@ -468,12 +468,12 @@ Connection ~ 2500 6450
 Wire Wire Line
 	1750 6250 2100 6250
 $Comp
-L Device:R_Small R?
+L Device:R_Small R1
 U 1 1 5E1825A9
 P 2200 6250
-F 0 "R?" V 2200 6250 50  0000 C CNN
+F 0 "R1" V 2200 6250 50  0000 C CNN
 F 1 "5.1k" V 2095 6250 50  0000 C CNN
-F 2 "" H 2200 6250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2200 6250 50  0001 C CNN
 F 3 "~" H 2200 6250 50  0001 C CNN
 	1    2200 6250
 	0    1    1    0   
@@ -498,12 +498,12 @@ Wire Wire Line
 	1750 6050 2250 6050
 Connection ~ 2250 6050
 $Comp
-L random-keyboard-parts:PRTR5V0U2X U?
+L random-keyboard-parts:PRTR5V0U2X U1
 U 1 1 5E18BDD6
 P 3200 6450
-F 0 "U?" H 3200 6163 60  0000 C CNN
+F 0 "U1" H 3200 6163 60  0000 C CNN
 F 1 "PRTR5V0U2X" H 3200 6269 60  0000 C CNN
-F 2 "" H 3200 6450 60  0001 C CNN
+F 2 "local:SOT143B" H 3200 6450 60  0001 C CNN
 F 3 "" H 3200 6450 60  0001 C CNN
 	1    3200 6450
 	-1   0    0    1   
@@ -530,10 +530,10 @@ Wire Wire Line
 	1950 5450 2250 5450
 Connection ~ 1950 5450
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR03
 U 1 1 5E1A381A
 P 2250 5450
-F 0 "#PWR?" H 2250 5300 50  0001 C CNN
+F 0 "#PWR03" H 2250 5300 50  0001 C CNN
 F 1 "VCC" H 2267 5623 50  0000 C CNN
 F 2 "" H 2250 5450 50  0001 C CNN
 F 3 "" H 2250 5450 50  0001 C CNN
@@ -544,10 +544,10 @@ Connection ~ 2250 5450
 Wire Wire Line
 	2250 5450 2500 5450
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR06
 U 1 1 5E1A3F77
 P 2900 6500
-F 0 "#PWR?" H 2900 6350 50  0001 C CNN
+F 0 "#PWR06" H 2900 6350 50  0001 C CNN
 F 1 "VCC" V 2918 6627 50  0000 L CNN
 F 2 "" H 2900 6500 50  0001 C CNN
 F 3 "" H 2900 6500 50  0001 C CNN
@@ -562,21 +562,21 @@ Wire Wire Line
 	3500 6650 2500 6650
 Connection ~ 2500 6650
 $Comp
-L Connector:AVR-ISP-6 J?
+L Connector:AVR-ISP-6 J1
 U 1 1 5E1A8BD3
 P 3050 1800
-F 0 "J?" H 2721 1896 50  0000 R CNN
+F 0 "J1" H 2721 1896 50  0000 R CNN
 F 1 "AVR-ISP-6" H 2721 1805 50  0000 R CNN
-F 2 "" V 2800 1850 50  0001 C CNN
+F 2 "random-keyboard-parts:Reset_Pretty-Mask" V 2800 1850 50  0001 C CNN
 F 3 " ~" H 1775 1250 50  0001 C CNN
 	1    3050 1800
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR07
 U 1 1 5E1A9733
 P 2950 1300
-F 0 "#PWR?" H 2950 1150 50  0001 C CNN
+F 0 "#PWR07" H 2950 1150 50  0001 C CNN
 F 1 "+5V" H 2965 1473 50  0000 C CNN
 F 2 "" H 2950 1300 50  0001 C CNN
 F 3 "" H 2950 1300 50  0001 C CNN
@@ -584,10 +584,10 @@ F 3 "" H 2950 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L keyboard_parts:GND #PWR?
+L keyboard_parts:GND #PWR08
 U 1 1 5E1A9DF3
 P 2950 2200
-F 0 "#PWR?" H 2950 2250 20  0001 C CNN
+F 0 "#PWR08" H 2950 2250 20  0001 C CNN
 F 1 "GND" H 2950 2100 30  0000 C CNN
 F 2 "" H 2950 2200 60  0000 C CNN
 F 3 "" H 2950 2200 60  0000 C CNN
@@ -613,6 +613,57 @@ Text GLabel 7100 2900 2    50   Input ~ 0
 MISO
 Text GLabel 7100 3000 2    50   Input ~ 0
 MOSI
-Text GLabel 7100 2800 2    50   Input ~ 0
+Text GLabel 7650 2800 1    50   Input ~ 0
 SCLK
+$Sheet
+S 8700 4200 650  200 
+U 5E1AEC63
+F0 "matrix" 50
+F1 "matrix.sch" 50
+$EndSheet
+Text GLabel 7100 3600 2    50   Input ~ 0
+row0
+Text GLabel 7100 3400 2    50   Input ~ 0
+row1
+Text GLabel 7100 3300 2    50   Input ~ 0
+row2
+Text GLabel 7100 3200 2    50   Input ~ 0
+row3
+Text GLabel 7100 3100 2    50   Input ~ 0
+row4
+Text GLabel 7100 3900 2    50   Input ~ 0
+col2
+Text GLabel 7100 4000 2    50   Input ~ 0
+col3
+Text GLabel 7100 4100 2    50   Input ~ 0
+col4
+Text GLabel 7100 4200 2    50   Input ~ 0
+col5
+Text GLabel 7100 4300 2    50   Input ~ 0
+col6
+Text GLabel 7100 4400 2    50   Input ~ 0
+col7
+Text GLabel 7100 4500 2    50   Input ~ 0
+col8
+Text GLabel 7100 4600 2    50   Input ~ 0
+col9
+Text GLabel 7100 5100 2    50   Input ~ 0
+col10
+Text GLabel 7100 5200 2    50   Input ~ 0
+col11
+Text GLabel 7100 5300 2    50   Input ~ 0
+col12
+Text GLabel 7100 5400 2    50   Input ~ 0
+col13
+Text GLabel 7100 5500 2    50   Input ~ 0
+col14
+Text GLabel 7100 2700 2    50   Input ~ 0
+col0
+Wire Wire Line
+	7100 2800 7650 2800
+Text GLabel 7450 2800 1    50   Input ~ 0
+col1
+NoConn ~ 7100 5600
+NoConn ~ 7100 4900
+NoConn ~ 7100 3700
 $EndSCHEMATC
