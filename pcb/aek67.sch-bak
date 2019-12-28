@@ -217,7 +217,7 @@ Wire Wire Line
 	5550 2500 5550 2700
 Connection ~ 5550 2700
 Wire Wire Line
-	5550 2700 5750 2700
+	5550 2700 5900 2700
 Wire Wire Line
 	5250 2500 5200 2500
 Wire Wire Line
@@ -561,58 +561,4 @@ Wire Wire Line
 Wire Wire Line
 	3500 6650 2500 6650
 Connection ~ 2500 6650
-$Comp
-L Connector:AVR-ISP-6 J?
-U 1 1 5E1A8BD3
-P 3050 1800
-F 0 "J?" H 2721 1896 50  0000 R CNN
-F 1 "AVR-ISP-6" H 2721 1805 50  0000 R CNN
-F 2 "" V 2800 1850 50  0001 C CNN
-F 3 " ~" H 1775 1250 50  0001 C CNN
-	1    3050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5E1A9733
-P 2950 1300
-F 0 "#PWR?" H 2950 1150 50  0001 C CNN
-F 1 "+5V" H 2965 1473 50  0000 C CNN
-F 2 "" H 2950 1300 50  0001 C CNN
-F 3 "" H 2950 1300 50  0001 C CNN
-	1    2950 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L keyboard_parts:GND #PWR?
-U 1 1 5E1A9DF3
-P 2950 2200
-F 0 "#PWR?" H 2950 2250 20  0001 C CNN
-F 1 "GND" H 2950 2100 30  0000 C CNN
-F 2 "" H 2950 2200 60  0000 C CNN
-F 3 "" H 2950 2200 60  0000 C CNN
-	1    2950 2200
-	1    0    0    -1  
-$EndComp
-Text GLabel 3450 1900 2    50   Input ~ 0
-RST
-Text GLabel 3450 1600 2    50   Input ~ 0
-MISO
-Text GLabel 3450 1700 2    50   Input ~ 0
-MOSI
-Text GLabel 3450 1800 2    50   Input ~ 0
-SCLK
-Text GLabel 5750 2500 1    50   Input ~ 0
-RST
-Wire Wire Line
-	5750 2500 5750 2700
-Connection ~ 5750 2700
-Wire Wire Line
-	5750 2700 5900 2700
-Text GLabel 7100 2900 2    50   Input ~ 0
-MISO
-Text GLabel 7100 3000 2    50   Input ~ 0
-MOSI
-Text GLabel 7100 2800 2    50   Input ~ 0
-SCLK
 $EndSCHEMATC
