@@ -585,7 +585,7 @@ row3
 Text GLabel 7100 5400 2    50   Input ~ 0
 row2
 Text GLabel 7100 5500 2    50   Input ~ 0
-col13
+col14
 Text GLabel 7100 2700 2    50   Input ~ 0
 row0
 Wire Wire Line
@@ -676,7 +676,7 @@ Connection ~ 2500 6650
 Text GLabel 7100 3700 2    50   Input ~ 0
 col12
 Text GLabel 7100 5600 2    50   Input ~ 0
-col14
+col13
 NoConn ~ 7100 5100
 NoConn ~ 7100 3400
 $EndSCHEMATC

@@ -555,50 +555,44 @@ F0 "matrix" 50
 F1 "matrix.sch" 50
 $EndSheet
 Text GLabel 7100 3600 2    50   Input ~ 0
-row0
-Text GLabel 7100 3400 2    50   Input ~ 0
-row1
-Text GLabel 7100 3300 2    50   Input ~ 0
-row2
-Text GLabel 7100 3200 2    50   Input ~ 0
-row3
-Text GLabel 7100 3100 2    50   Input ~ 0
-row4
-Text GLabel 7100 3900 2    50   Input ~ 0
-col2
-Text GLabel 7100 4000 2    50   Input ~ 0
-col3
-Text GLabel 7100 4100 2    50   Input ~ 0
-col4
-Text GLabel 7100 4200 2    50   Input ~ 0
-col5
-Text GLabel 7100 4300 2    50   Input ~ 0
-col6
-Text GLabel 7100 4400 2    50   Input ~ 0
-col7
-Text GLabel 7100 4500 2    50   Input ~ 0
-col8
-Text GLabel 7100 4600 2    50   Input ~ 0
-col9
-Text GLabel 7100 5100 2    50   Input ~ 0
-col10
-Text GLabel 7100 5200 2    50   Input ~ 0
 col11
-Text GLabel 7100 5300 2    50   Input ~ 0
-col12
-Text GLabel 7100 5400 2    50   Input ~ 0
-col13
-Text GLabel 7100 5500 2    50   Input ~ 0
-col14
-Text GLabel 7100 2700 2    50   Input ~ 0
+Text GLabel 7100 3300 2    50   Input ~ 0
+col10
+Text GLabel 7100 3200 2    50   Input ~ 0
+col9
+Text GLabel 7100 3100 2    50   Input ~ 0
+col8
+Text GLabel 7100 3900 2    50   Input ~ 0
 col0
+Text GLabel 7100 4000 2    50   Input ~ 0
+col1
+Text GLabel 7100 4100 2    50   Input ~ 0
+col2
+Text GLabel 7100 4200 2    50   Input ~ 0
+col3
+Text GLabel 7100 4300 2    50   Input ~ 0
+col5
+Text GLabel 7100 4400 2    50   Input ~ 0
+col4
+Text GLabel 7100 4500 2    50   Input ~ 0
+col6
+Text GLabel 7100 4600 2    50   Input ~ 0
+col7
+Text GLabel 7100 5200 2    50   Input ~ 0
+row4
+Text GLabel 7100 5300 2    50   Input ~ 0
+row3
+Text GLabel 7100 5400 2    50   Input ~ 0
+row2
+Text GLabel 7100 5500 2    50   Input ~ 0
+col13
+Text GLabel 7100 2700 2    50   Input ~ 0
+row0
 Wire Wire Line
 	7100 2800 7650 2800
 Text GLabel 7450 2800 1    50   Input ~ 0
-col1
-NoConn ~ 7100 5600
+row1
 NoConn ~ 7100 4900
-NoConn ~ 7100 3700
 $Comp
 L power:GND #PWR09
 U 1 1 5E3A94BD
@@ -679,4 +673,10 @@ $EndComp
 Wire Wire Line
 	2500 6650 2500 6750
 Connection ~ 2500 6650
+Text GLabel 7100 3700 2    50   Input ~ 0
+col12
+Text GLabel 7100 5600 2    50   Input ~ 0
+col14
+NoConn ~ 7100 5100
+NoConn ~ 7100 3400
 $EndSCHEMATC
