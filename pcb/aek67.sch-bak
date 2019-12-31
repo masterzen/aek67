@@ -220,7 +220,7 @@ XTAL1
 Text GLabel 3900 3400 1    50   Input ~ 0
 XTAL2
 $Comp
-L keyboard_parts:XTAL_GND X1
+L Device:Crystal_GND24_Small X1
 U 1 1 5E165594
 P 3600 3800
 F 0 "X1" H 3600 4092 60  0000 C CNN
@@ -232,10 +232,6 @@ F 3 "" H 3600 3800 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	3900 3400 3900 3800
-Wire Wire Line
-	3300 3800 3300 3400
-Wire Wire Line
-	3600 4000 3600 4250
 Wire Wire Line
 	3600 4250 3300 4250
 Wire Wire Line
@@ -252,9 +248,6 @@ F 3 "~" H 3300 4050 50  0001 C CNN
 	1    3300 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3300 3950 3300 3800
-Connection ~ 3300 3800
 Wire Wire Line
 	3300 4150 3300 4250
 $Comp
@@ -680,4 +673,24 @@ col13
 NoConn ~ 7100 5100
 NoConn ~ 7100 3400
 NoConn ~ 5400 4300
+Wire Wire Line
+	3700 3800 3900 3800
+Wire Wire Line
+	3300 3400 3300 3800
+Wire Wire Line
+	3500 3800 3300 3800
+Connection ~ 3300 3800
+Wire Wire Line
+	3300 3800 3300 3950
+Wire Wire Line
+	3600 3900 3600 4000
+Wire Wire Line
+	3600 3700 3750 3700
+Wire Wire Line
+	3750 3700 3750 4000
+Wire Wire Line
+	3750 4000 3600 4000
+Connection ~ 3600 4000
+Wire Wire Line
+	3600 4000 3600 4250
 $EndSCHEMATC
