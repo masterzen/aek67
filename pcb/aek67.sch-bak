@@ -672,7 +672,6 @@ Text GLabel 7100 5600 2    50   Input ~ 0
 col13
 NoConn ~ 7100 5100
 NoConn ~ 7100 3400
-NoConn ~ 5400 4300
 Wire Wire Line
 	3700 3800 3900 3800
 Wire Wire Line
